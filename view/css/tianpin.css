@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+header,section,footer{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+html,body{
+    margin: 0;padding: 0;
+    height: 100%;
+    overflow-x:hidden;
+}
+body{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+h1,h2,h3,h4,h5,h6,ul,li{
+    margin: 0;padding: 0;
+}
+::-webkit-scrollbar {/*隐藏滚轮*/
+display: none;
+}
+header{
+    background:#fca017;
+    align-items: center;
+}
+header h3 {
+    color: #fff;
+    height: .5rem;
+    line-height: .5rem;
+}
+
+header h3 a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 1rem;
+}
+section{
+    background:#fff;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+section .tejia ul li .p1 .sp1 {
+    text-decoration: blink;
+    padding-left: 0;
+    color: #fca017;
+}
+section .tejia ul li span{
+	color: #fca017;
+}
+section .tejia ul li .p1 .sp2 {
+    color: #000;
+}
+section .tejia {
+    margin-top: .1rem;
+}
+section .tejia img{
+    width: 1rem;
+    height: 1rem;
+    margin-left: .18rem;
+    margin-bottom: .1rem;
+}
+section .tejia ul li img{
+	width: .8rem;
+    height: .8rem;
+    display: block;
+    margin: .1rem;
+    float: left;
+}
+section .tejia ul li h4{
+    padding: .1rem 0 .1rem;
+}
+section .tejia ul li .p1{
+	display: block;
+}
+section .tejia ul li .p1 i{
+	color: #fca017;
+	float: left;
+}
+section .tejia ul li .p1 .sp1{
+	text-decoration:line-through;
+	float: left;
+    padding-left: .1rem;
+}
+section .tejia ul li .p1 .sp2{
+	float: right;
+	padding-right: .1rem;
+}
+section .tejia ul li span{
+	display: block;
+	font-size: .14rem;
+}
+section .tejia ul li .p1{
+	display: block;
+}

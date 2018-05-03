@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+header,section,footer{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+html,body{
+    margin: 0;padding: 0;
+    height: 100%;
+    overflow-x:hidden;
+}
+body{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+h1,h2,h3,h4,h5,h6,ul,li{
+    margin: 0;padding: 0;
+}
+::-webkit-scrollbar {/*隐藏滚轮*/
+display: none;
+}
+header{
+    background:#fca017;
+    align-items: center;
+}
+header h3{
+	text-align: center;
+    color: #fff;
+    height: .5rem;
+    line-height: .5rem;
+}
+
+section{
+    background:#fff;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+section .section_top ul{
+	flex: 1;
+	display: flex;
+	padding: .1rem .1rem 0;
+}
+section .section_bot ul{
+	flex: 1;
+	display: flex;
+	padding: .1rem .1rem 0;
+}
+section .section_top ul li{
+	width: 1.8rem;
+	height: 1.1rem;
+	text-align: center;
+}
+section .section_top ul li img{
+	width: .6rem;
+	height: .6rem;
+	display: block;
+	margin-left: .2rem;
+	margin-bottom: .1rem;
+}
+section .section_top ul li span{
+	padding-left: .1rem;
+}
+section .section_bot ul li{
+	width: 1.8rem;
+	height: 1.1rem;
+	text-align: center;
+}
+section .section_bot ul li img{
+	width: .6rem;
+	height: .6rem;
+	display: block;
+	margin-left: .2rem;
+	margin-bottom: .1rem;
+}
+section .section_bot ul li span{
+	padding-left: .1rem;
+}
+section .line{
+	height: .1rem;
+	background: #efefef;
+}
+.swiper-slide img{
+    width: 100%;
+}
+   
+section .tuijian{
+	line-height: .4rem;
+	text-align: center;
+}
+section .tejia{
+	margin-bottom: .55rem;
+	
+}
+section .tejia ul{
+	overflow: hidden;
+}
+section .tejia ul li {
+	overflow: hidden;
+	border-top:1px solid #eee ;
+}
+section .tejia ul li img{
+	width: 1rem;
+    height: 1rem;
+    display: block;
+    margin: .2rem;
+    float: left;
+}
+section .tejia ul li h4{
+	    padding: .2rem 0 .1rem;
+}
+section .tejia ul li .p1{
+	display: block;
+}
+section .tejia ul li .p1 i{
+	color: #fca017;
+	float: left;
+}
+section .tejia ul li .p1 .sp1{
+	text-decoration:line-through;
+	float: left;
+    padding-left: .1rem;
+}
+section .tejia ul li .p1 .sp2{
+	float: right;
+	padding-right: .1rem;
+}
+section .tejia ul li span{
+	display: block;
+	font-size: .14rem;
+}
+
+
+footer{
+    height: .55rem;
+    border-top: 1px solid #eee;
+    background:#fff;
+    display: flex;
+    flex-shrink: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+footer .active{
+	color: #fca017;
+}
+footer a{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+.fa{
+	font-size: 20px!important;
+}
+
+

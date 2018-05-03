@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>秀美食</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css"/>
+    <link rel="stylesheet" href="page/icons/iconfont.css">
+    <link rel="stylesheet" href="swiper/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script>
+         document.documentElement.style.fontSize = document.documentElement.clientWidth/3.75+'px'
+    </script>
+</head>
+
+<body>
+    <header>
+	    <span id="address">北京</span>
+	    <input type="text" placeholder="请输入关键词">
+    </header>
+
+    <section>
+        <div class="swiper-container banner">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <ul>
+            <li class="li">
+                <a href="view/xinpin.html"><img src="06.jpg" alt=""></a>
+                <span>新品上架</span>
+            </li>
+            <li class="li">
+                <a href="view/youhui.html"><img src="07.jpg" alt=""></a>
+                <span>优惠专区</span>
+            </li>
+            <li class="li">
+                <a href="view/tese.html"><img src="08.jpg" alt=""></a>
+                <span>特色专区</span>
+            </li>
+            <li class="li">
+                <a href="view/dangji.html"><img src="09.jpg" alt=""></a>
+                <span>当季食材</span>
+            </li>
+            
+        </ul>
+        <p class="line"></p>
+        <div class="tuijian">
+        	--------今日推荐--------
+        </div>
+        <div class="shipin">
+        	<a href="view/tese.html"><img src="img/11.jpg" /></a>
+        	<img src="img/12.jpg" />
+        	<img src="img/13.jpg" />
+        	<img src="img/14.jpg" />
+        	<img src="img/15.jpg" />
+        	<img src="img/16.jpg" />
+        	<img src="img/17.jpg" />
+        	<img src="img/18.jpg" />
+        </div>
+    </section>
+
+    <footer>
+        <a href="index.html" class="active">
+            <i class="fa fa-home"></i>
+            <span>主页</span>
+        </a>
+        <a href="page/meishi.html">
+            <i class="fa fa-cutlery"></i>
+            <span>美食</span>
+        </a>
+        <a href="page/xiuyixiu.html">
+            <i class="fa fa-eye"></i>
+            <span>秀一秀</span>
+        </a>
+        <a href="page/chuji.html">
+            <i class="fa fa-fire"></i>
+            <span>厨技</span>
+        </a>
+        <a href="page/my.html">
+            <i class="fa fa-user"></i>
+            <span>我的</span>
+        </a>
+    </footer>
+    <script src="zepto.min.js"></script>
+    <script src="swiper/swiper-3.4.2.jquery.min.js"></script>
+    <script>
+        var Banner = new Swiper(".banner",{
+            pagination:".swiper-pagination",
+           	autoplay : 3000,
+           	loop : true,
+            autoplayDisableOnInteraction : false,
+            // effect : 'coverflow',
+            // slidesPerView: 3,
+            // centeredSlides: true,
+        })
+
+        $.ajax({
+            url:"./zol.json",
+            success:function(data){
+                var str = ''
+                data.forEach(function(item){
+                    str += '<div class="swiper-slide">'
+                            +'<img src="'+item+'" alt="">'
+                            +'</div>'
+                })
+                $(".banner .swiper-wrapper").html(str)
+                Banner.update()
+            }
+        })
+    </script>
+</body>
+</html>

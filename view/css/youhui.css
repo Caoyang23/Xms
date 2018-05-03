@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+header,section,footer{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+html,body{
+    margin: 0;padding: 0;
+    height: 100%;
+    overflow-x:hidden;
+}
+body{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+h1,h2,h3,h4,h5,h6,ul,li{
+    margin: 0;padding: 0;
+}
+::-webkit-scrollbar {/*隐藏滚轮*/
+display: none;
+}
+header{
+    background:#fca017;
+    align-items: center;
+}
+header h3 {
+    color: #fff;
+    height: .5rem;
+    line-height: .5rem;
+}
+
+header h3 a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 1rem;
+}
+
+section{
+    background:#fff;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+section .shipin img:nth-child(6){
+	padding-left: .1rem;
+}
+
+section .tuijian{
+	line-height: .4rem;
+	text-align: center;
+}
+
+section .shipin {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .shipin img {
+    width: 1.5rem;
+    height: 1rem;
+    margin: .17rem;
+}
